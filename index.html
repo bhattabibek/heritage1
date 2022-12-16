@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+  <title> NEPAL HERITAGE SOCIETY</title>
+</head>
+<body onload="slider()">
+
+  <div class="banner">
+    <div class="slider">
+      <img id="slideImg" src="images/ngo.jpg" alt="">
+    </div>
+    <div class="overlay">
+      <div class="navbar">
+        <div class="logo">
+          NEPAL HERITAGE SOCIETY
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Charity</a>     
+          <a href="#">Contact Us</a>
+           </div>
+        <div class="menu-icons">
+          <i class="fa-brands fac fa-facebook"></i>
+          <i class="fa-solid en fa-envelope"></i>
+        </div>
+      </div>
+      <div class="content">
+         <h1>Nepal Heritage Society</h1>
+      </div>
+      <div class="contenttwo">  <h3>A Non Governamental Origaniztion. Welcome to NEPAL HERITAGE SCOEITY.<br>A Place for all.Non-governmental organizations, or NGOs, <br>were first called such in Article 71 in the Charter of the newly formed United Nations in 1945.</h3>
+      
+      
+      </div>
+      <button type="button">Read More</button>
+      <button type="button" class="btntwo">Contact Us</button>
+    </div>
+  </div>
+  <script>
+     const slideImg = document.getElementById("slideImg");
+     const images = new Array(
+
+     "images/ngo.jpg",
+     "images/ngo2.jpg",
+     "images/ngo3.jpg"
+   
+
+     );
+     const len = images.length;
+     var i = 0;
+     function slider(){
+       if(i>len-1)
+       {
+         i=0
+       }
+       slideImg.src=images[i];
+       i++;
+       setTimeout('slider()',3000)
+     }
+  </script>
+</body>
+</html>
